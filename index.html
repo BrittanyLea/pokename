@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokename!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<h1 align="center">Pokename Generator</h1>
+
+	<div class="form-box" align="center">
+	<form class="name">
+		Root Name:
+		<input id="input" type="text" placeholder="enter your name" />
+		<button type="submit">generate Pokename</button>
+	</form>
+    </div>
+
+    <script type="text/javascript">
+    var nameInput = document.getElementById('input');
+    document.querySelector('form.name').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    console.log(nameInput.value);    
+    });
+    </script>
+
+</body>
+</html>
