@@ -44,3 +44,12 @@ input {
   text-decoration: none;
   color: white;
 }
+
+@font-face {
+  font-family: 'Pokemon';
+  src:
+  local('Pokemon-Hollow'),
+  local('Pokemon-Solid'),
+  url('Pokemon-Hollow.ttf');
+  url('Pokemon-Solid.ttf');
+}
