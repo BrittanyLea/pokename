@@ -3,7 +3,8 @@
 <head>
 	<title>Pokename!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+  <script src='app.js'></script>
+  <script src='bower_components/jquery/dist/jquery.js'></script>
 <style>
 @font-face { font-family: Pokemon; src: url('Pokemon-Hollow.ttf'); } 
 h1 {
@@ -14,12 +15,12 @@ font-family: Pokemon
 </head>
 <body>
 
-	<h1 align="center">Pokename Generator</h1>
+	<h1 align="center"><font size="60">Pokename Generator</font></h1>
 
 	<div class="form-box" align="center">
 	<form class="name">
 <!-- 		<h3>Root Name:</h3><br>-->		
-  <input id="input" type="text" size="40" placeholder="enter your name" />
+  <input id="input" type="text" size="40" placeholder="enter your first name" />
 		<button class="btn" type="submit">generate Pokename</button>
 	</form>
     </div>
@@ -28,7 +29,7 @@ font-family: Pokemon
     var nameInput = document.getElementById('input');
     document.querySelector('form.name').addEventListener('submit', function (e) {
     e.preventDefault();
-
+    console.log(pokename(nameInput.value))
     console.log(nameInput.value);    
     });
     </script>
