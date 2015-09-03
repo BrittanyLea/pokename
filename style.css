@@ -7,8 +7,9 @@ body {
 	font-family: sans-serif;
 }
 
-input {
-
+h1 {
+  font-size: 70px;
+  color: black;
 }
 
 .form-box {
@@ -46,10 +47,20 @@ input {
 }
 
 @font-face {
-  font-family: 'Pokemon';
+  font-family: 'Pokemon-Hollow';
   src:
   local('Pokemon-Hollow'),
-  local('Pokemon-Solid'),
   url('Pokemon-Hollow.ttf');
+}
+
+@font-face {
+  font-family: 'Pokemon-Solid';
+  src:
+  local('Pokemon-Solid'),
   url('Pokemon-Solid.ttf');
+}
+
+.name-result {
+  font-size: 55px;
+  color: white;
 }
